@@ -114,7 +114,7 @@ body {
 }
 .slide .slide_btns {
   margin-left: 30px;
-  패딩으로 하면 버튼 자체가 늘어남
+  /* 패딩으로 하면 버튼 자체가 늘어남 */
 }
 .slide .slide_text {
   position: absolute;
