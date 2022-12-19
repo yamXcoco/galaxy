@@ -3,3 +3,81 @@ body {
   font-family: "Nanum Gothic", sans-serif;
   color: #111;
 }
+/* 모두 포인터주기 */
+.center_box {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.top {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  font-size: 40px;
+  font-weight: 700;
+  margin-right: auto;
+  /* 자기가 알아서 띄워줌 */
+}
+/* .top, */
+.nav {
+  display: flex;
+  align-items: center;
+}
+/* 둘다 동시에 같은효과 넣기 */
+
+.nav li a {
+  display: inline-block;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  font-size: 14px;
+  padding: 0 30px;
+  /* 패딩대신 마진으로 주면 커서 사이에 공간생겨서 텍스트 사이 hover효과가 비워짐 */
+  position: relative;
+}
+.nav li a.on {
+  color: orange;
+}
+.nav li a:hover {
+  color: #eb5757;
+}
+.nav li a::after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 3px;
+  background-color: #eb5757;
+  bottom: 0;
+  left: 0;
+  transition: all 0.3s;
+}
+.nav li a:hover::after {
+  width: 100%;
+}
+/* 하이퍼링크 아래에 움직이는 도형넣는 코드 */
+.cart i {
+  font-size: 24px;
+  margin-left: 0 30px;
+  position: relative;
+}
+.cart i span {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  border-radius: 16px;
+  background-color: #ff0000;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.slide {
+  height: 500px;
+  background-color: #f5f5f5;
+}
