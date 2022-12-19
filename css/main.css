@@ -3,7 +3,7 @@ body {
   font-family: "Nanum Gothic", sans-serif;
   color: #111;
 }
-/* 모두 포인터주기 */
+/* 모두 이름주기 */
 .center_box {
   width: 1200px;
   margin: 0 auto;
@@ -21,12 +21,11 @@ body {
   /* 자기가 알아서 띄워줌 */
 }
 /* .top, */
+/* 둘다 동시에 같은효과 넣기 */
 .nav {
   display: flex;
   align-items: center;
 }
-/* 둘다 동시에 같은효과 넣기 */
-
 .nav li a {
   display: inline-block;
   height: 80px;
@@ -80,4 +79,18 @@ body {
 .slide {
   height: 500px;
   background-color: #f5f5f5;
+}
+.inner {
+  height: 500px;
+  background-image: url(/images/slide_bg.png);
+  background-repeat: no-repeat;
+  background-position: center right 30px;
+  position: relative;
+  background-color: yellow;
+}
+.slide .slide_text {
+  position: absolute;
+  top: 124px;
+  left: 20;
+  background-color: red;
 }
