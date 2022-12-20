@@ -417,3 +417,12 @@ body {
   color: #f5f5f5;
   margin-bottom: 30px;
 }
+
+.footer_menu ul li a:hover {
+  text-decoration: underline;
+}
+.copyright {
+  font-size: 12px;
+  color: #f5f5f5;
+  margin-top: 36px;
+}
