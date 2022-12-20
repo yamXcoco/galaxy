@@ -2,6 +2,7 @@
 body {
   font-family: "Nanum Gothic", sans-serif;
   color: #111;
+  font-size: 16px;
 }
 .btn {
   font-size: 16px;
@@ -27,6 +28,19 @@ body {
   margin-right: 44px;
   padding: 12px 0;
   border-bottom: 1px solid #111;
+}
+.btn.small {
+  font-size: 14px;
+  width: 120px;
+  height: 36px;
+  border: 1px solid #111;
+  /* border-radius: 46px; */
+  transition: border 0.3s;
+  /* all말고 border도 투명도도 사용가능 */
+}
+.btn.btn.small:hover {
+  border: 1px solid #eb5757;
+  background-color: #eb5757;
 }
 .center_box {
   /* 모두 이름주기 */
@@ -130,4 +144,276 @@ body {
 .slide .slide_text h2 b {
   font-size: 70px;
   font-weight: 800;
+}
+/* PRODUCT_01 */
+.product_01 {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.product_01 li {
+  background-color: #f5f5f5;
+  width: 560px;
+  height: 320px;
+  display: flex;
+  align-items: center;
+}
+.product_01 li .photo {
+  width: 228px;
+  height: 160px;
+  position: relative;
+}
+.product_01 li .photo img {
+  width: 160px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  /* 포지션 지정시 부모요소 높이 사라짐 그래서 새로 부모 요소 높이 지정 */
+  /* translateX는 x축으로 이동 */
+}
+.product_01 li .photo .first {
+  opacity: 1;
+  transition: all 0.6s;
+  /* hover전에 트랜지션코드 */
+}
+.product_01 li .photo .second {
+  opacity: 0;
+  transition: all 0.6s;
+}
+.product_01 li:hover .photo .first {
+  opacity: 0;
+}
+.product_01 li:hover .photo .second {
+  opacity: 1;
+}
+/* 마우스 가져다가면 사진 바뀌는 코드 */
+.product_01 .detail h3 {
+  font-size: 30px;
+  font-weight: 800;
+}
+.product_01 .detail p {
+  color: #666;
+  padding-top: 16px;
+  padding-bottom: 35px;
+}
+
+/* .product_02 */
+.product_02 {
+  margin-top: 120px;
+  margin-bottom: 100px;
+}
+.product_02 .titles {
+  text-align: center;
+  margin-bottom: 64px;
+}
+.product_02 .titles h3 {
+  font-size: 36px;
+  font-weight: 800;
+  padding-bottom: 26px;
+}
+.product_02 .titles p {
+  color: #666;
+}
+.product_02 .items {
+  display: flex;
+  justify-content: space-between;
+}
+.product_02 .items li {
+  width: 260px;
+  height: 260px;
+  background-color: #f5f5f5;
+  position: relative;
+}
+.product_02 .items li img {
+  width: 160px;
+  height: 160px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.product_02 .items li img.first {
+  opacity: 1;
+  transition: all 0.6s;
+}
+.product_02 .items li img.second {
+  opacity: 0;
+  transition: all 0.6s;
+}
+.product_02 .items li:hover img.first {
+  opacity: 0;
+}
+.product_02 .items li:hover img.second {
+  opacity: 1;
+}
+
+/* banner */
+.banner {
+  height: 600px;
+  background-image: url("/images/big.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.banner .center_box {
+  height: 600px;
+  padding: 0;
+  position: relative;
+}
+
+.banner .center_box .banner_text {
+  position: absolute;
+  top: 170px;
+  left: 40px;
+  color: #fff;
+}
+
+.banner .center_box .banner_text p {
+  padding-top: 30px;
+  padding-bottom: 56px;
+  line-height: 36px;
+  font-size: 24px;
+  font-weight: 100;
+}
+
+.banner .center_box .banner_text h2 {
+  font-size: 64px;
+  font-weight: 700;
+}
+
+/* .product_03 */
+.product_03 {
+  margin-top: 120px;
+  margin-bottom: 100px;
+}
+
+.product_03 .titles {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.product_03 .titles h3 {
+  font-size: 36px;
+  font-weight: 800;
+  padding-bottom: 26px;
+}
+
+.product_03 .titles p {
+  color: #666;
+}
+
+.product_03 .items {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+/* 갭이랑 랩으로 자동간격 */
+
+.product_03 .items li {
+  width: 260px;
+  height: 260px;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* .product_04 */
+.product_04 {
+  margin-top: 120px;
+  margin-bottom: 100px;
+}
+.product_04 .titles {
+  text-align: center;
+  margin-bottom: 64px;
+}
+.product_04 .titles h3 {
+  font-size: 36px;
+  font-weight: 800;
+  padding-bottom: 26px;
+}
+.product_04 .titles p {
+  color: #666;
+}
+.product_04 .items {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  /* 갭이랑 랩으로 자동간격 */
+}
+.product_04 .items li {
+  width: 360px;
+  height: 360px;
+  background-color: #f5f5f5;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 32px;
+  overflow: hidden;
+  /* 프레임 바깥으로 못나가게 마스크*/
+}
+.product_04 .items li:hover img {
+  transform: scale(1.2);
+  transition: all 0.3s;
+}
+.product_04 .items li img {
+  width: 360px;
+  height: 360px;
+}
+/* bottom */
+.bottom {
+  background-color: #222;
+  color: #fff;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.footer {
+  display: flex;
+}
+.footer_info {
+  width: 600px;
+}
+.footer_info h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+.footer_info p {
+  font-size: 14px;
+  padding-top: 40px;
+  padding-bottom: 24px;
+  line-height: 22px;
+}
+.social_icons {
+  display: flex;
+}
+.social_icons li a {
+  display: inline-block;
+  margin-right: 16px;
+  /* 마진16만큼은 hover효과 없음 */
+}
+.social_icons li a i {
+  font-size: 38px;
+}
+.footer_menu {
+  display: flex;
+}
+.footer_menu li {
+  width: 200px;
+}
+.footer_menu > li > a {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.footer_menu ul li a {
+  display: inline-block;
+  font-size: 16px;
+  color: #f5f5f5;
+  margin-bottom: 30px;
 }
